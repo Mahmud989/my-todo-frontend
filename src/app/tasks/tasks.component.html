@@ -1,0 +1,25 @@
+<span>todo-app app is running!</span>
+<div class="content">
+  <div class="todos">
+    <form>
+      <input type="text"  [(ngModel)]="content" name="test">
+      <button (click)="addNewTodo()">add</button>
+    </form>
+
+    <table>
+      <thead>
+      <td>todo</td>
+      </thead>
+      <tbody>
+      <tr *ngFor="let todo of todos">
+
+        <td>&bull; {{todo.content}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="controllers">
+
+  </div>
+
+</div>

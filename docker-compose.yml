@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  angular-peerjs:
+    container_name: my-todo-frontend
+    restart: unless-stopped
+    image: hub.letsecure.az/my-todo-frontend:latest
+    ports:
+      - 5005:80
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    network_mode: "bridge"
