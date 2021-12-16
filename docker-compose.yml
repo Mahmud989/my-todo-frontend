@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     image: hub.letsecure.az/my-todo-frontend:latest
     ports:
-      - 80:80
+      - 6055:80
     volumes:
       - /etc/localtime:/etc/localtime:ro
     network_mode: "bridge"
