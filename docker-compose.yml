@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  angular-peerjs:
+  my-todo-frontend:
     container_name: my-todo-frontend
     restart: unless-stopped
     image: hub.letsecure.az/my-todo-frontend:latest
